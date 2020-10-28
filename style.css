@@ -67,9 +67,9 @@ h1{
     button{
         height: 30px;
         width: 30px;
-        margin: 3px 0 3px 6px;
         position: relative;
         right: 5px;
+        bottom: 2.5px;
     }
 
     #main-section{
