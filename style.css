@@ -2,6 +2,7 @@
 body{
     font-family: 'Grandstander', cursive;
     text-align: center;
+    width:100%;
 }
 
 h1{
@@ -11,6 +12,7 @@ h1{
 #top-section p{
     display: inline-block;
     margin: 0 20px 0 0;
+    text-align: center;
 }
 
 #main-section{
@@ -19,7 +21,7 @@ h1{
     border-width: 5px;
     border-radius: 25px;
     width: 420px;
-    height: 800px;
+    min-height: 800px;
     background-color: black;
 }
 
@@ -28,7 +30,7 @@ h1{
     border-style: solid;
     border-width: 5px;
     width: 340px;
-    height: 600px;
+    min-height: 600px;
     background-color: #FFFFFF;
 }
 
@@ -40,15 +42,45 @@ h1{
 
 .line-through{
     text-decoration: line-through;
+    color:red;
 }
 
 @media (max-device-width: 480px){
-    Body{
-        height: 100%;
-        width: 100%;
+    h1{
+        font-size: 5rem;
+        padding-top: 100px;
     }
 
-    h1{
-        padding-top: 300px;
+    p{
+        width:100%;
+        margin: 0;
+        padding: 0 0 20px 0;
+        font-size: 2rem;
     }
+
+    input{
+        font-size: 1.5rem;
+        position: relative;
+        right: 10px;
+    }
+
+    button{
+        height: 30px;
+        width: 30px;
+        margin: 3px 0 3px 6px;
+        position: relative;
+        right: 5px;
+    }
+
+    #main-section{
+        width: 500px;
+        min-height: 800px;
+    }
+
+    #list-section{
+        width: 400px;
+        min-height: 600px;
+        background-color: #FFFFFF;
+    }
+
 }

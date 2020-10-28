@@ -11,6 +11,15 @@ input.addEventListener("keypress", function(event){
     }
 });
 
+// target the ul since the li is still empty
+orderedList.addEventListener("click",addLine);
+
+function addLine(event){
+    if (event.target.tagName === "LI"){
+     event.target.classList.toggle("line-through");
+    }
+}
+
 function addListContent(){
     // do not add empty input value
     if (input.value.length > 0){
