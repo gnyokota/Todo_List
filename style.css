@@ -45,6 +45,10 @@ h1{
     color:red;
 }
 
+.foot-section p{
+    font-size:0.8rem;
+}
+
 @media (max-device-width: 480px){
     h1{
         font-size: 5rem;
